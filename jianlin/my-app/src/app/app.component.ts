@@ -8,4 +8,8 @@ import {Component, NgModule} from '@angular/core';
 
 export class AppComponent {
   title = 'my-app';
+  navLinks = [
+    { link : 'login', label :　'登入' },
+    { link : 'signup', label :　'註冊' }
+  ];
 }

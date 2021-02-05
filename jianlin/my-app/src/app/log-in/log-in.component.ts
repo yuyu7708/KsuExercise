@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators,} from '@angular/forms';
+
 
 @Component({
   selector: 'app-log-in',
@@ -7,17 +8,31 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
   hide = true;
-  password = new FormControl('',[
-    Validators.required
+  password = new FormControl('', [
+      Validators.required,
+      Validators.minLength(4),
+      Validators.maxLength(20),
   ]);
-  phone = new FormControl('',[
-    Validators.required
-  ]);
+  phone = new FormControl('', [Validators.required]);
+
   ngOnInit(): void {
-    this.phone.setValue('0971524933');
+    this.hide = true;
+  }
+  PhoneErrorMessage(){
+    if (this.phone.hasError('required')) {
+      return '請填寫手機號碼';
+    }
+    return '無效手機號碼';
+  }
+  PasswordErrorMessage(){
+    if (this.password.hasError('required')) {
+      return '請填寫手機號碼';
+    }else if(this.password.errors?.minlength){
+      return '密碼不足4個字元';
+    }
+    return '無效密碼';
   }
 
 }
