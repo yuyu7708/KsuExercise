@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="routing erro&#10;check input erro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,8 +43,16 @@
       <updated>1612430653002</updated>
       <workItem from="1612430654388" duration="638000" />
       <workItem from="1612434129808" duration="3407000" />
-      <workItem from="1612490842864" duration="13373000" />
+      <workItem from="1612490842864" duration="13670000" />
     </task>
+    <task id="LOCAL-00001" summary="routing erro&#10;check input erro">
+      <created>1612514886121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612514886121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +69,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="routing erro&#10;check input erro" />
+    <option name="LAST_COMMIT_MESSAGE" value="routing erro&#10;check input erro" />
   </component>
 </project>
