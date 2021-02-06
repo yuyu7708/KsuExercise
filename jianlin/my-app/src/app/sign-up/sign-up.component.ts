@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import validate = WebAssembly.validate;
+
 
 @Component({
   selector: 'app-sign-up',
@@ -7,24 +9,30 @@ import {FormControl, Validators} from "@angular/forms";
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+  myform=this.fb.group({
+    name:['',Validators.required],
+    phone:['',Validators.required],
+    addr:['',Validators.required],
+    password:['',[
+      Validators.required,
+      Validators.minLength(4),
+      Validators.maxLength(20)
+    ]],
+    checkpwd:['',Validators.required]
+  })
+  constructor(private fb: FormBuilder) { }
 
-  constructor() { }
-  name = new FormControl('', [
-    Validators.required
-  ]);
-  phone = new FormControl('', [
-    Validators.required
-  ]);
-  addr = new FormControl('', [
-    Validators.required
-  ]);
-  password = new FormControl('', [
-    Validators.required
-  ]);
-  Checkpwd = new FormControl('', [
-    Validators.required
-  ]);
-  ngOnInit(): void {
+  ngOnInit() {
+    this.myform.valueChanges.subscribe(console.log);
+
+    console.log(this.name?.errors?.required)
   }
+  get name(){ return this.myform.get('name');}
+  get phone(){ return this.myform.get('phone');}
+  get addr(){ return this.myform.get('addr');}
+  get password(){ return this.myform.get('password');}
+  get checkpwd(){ return this.myform.get('checkpwd');}
+
+
 
 }

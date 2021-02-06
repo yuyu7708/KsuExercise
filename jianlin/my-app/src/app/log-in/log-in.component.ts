@@ -22,13 +22,13 @@ export class LogInComponent implements OnInit {
   }
   PhoneErrorMessage(){
     if (this.phone.hasError('required')) {
-      return '請填寫手機號碼';
+      return '請輸入手機號碼';
     }
     return '無效手機號碼';
   }
   PasswordErrorMessage(){
     if (this.password.hasError('required')) {
-      return '請填寫手機號碼';
+      return '請輸入密碼4-20字元';
     }else if(this.password.errors?.minlength){
       return '密碼不足4個字元';
     }

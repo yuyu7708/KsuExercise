@@ -9,6 +9,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {NgModule} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import {MatTabsModule} from '@angular/material/tabs';
   ],
   declarations: [],
   exports:      [ CommonModule, BrowserAnimationsModule, MatTabsModule
-    , MatButtonModule, MatCardModule, MatInputModule, MatCheckboxModule, MatIconModule,
+    , MatButtonModule, MatCardModule, MatInputModule, MatCheckboxModule, MatIconModule, MatSelectModule
   ]
 })
 export class MatModule { }
