@@ -1,0 +1,26 @@
+<div class="meet-row">
+  <h2 class="meet-title" >
+    線上會議
+  </h2>
+  <div class="meet-actions">
+    <h2 class="meet-sub" >更多</h2>
+  </div>
+  <div class="my-card meet-lists" >
+    <div class="my-card-title meet-lists-title" >
+      今天
+    </div>
+    <div class="my-card-sub meet-lists-actions">
+      更多
+    </div>
+    <div class="my-card-content">
+      <div *ngFor="let list of MeetLists">
+        <div class="my-card-sub">
+          {{list.Time}}
+        </div>
+        <div class="meet-list-title" >
+          {{list.Title}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

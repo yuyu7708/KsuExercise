@@ -1,7 +1,7 @@
 <form class="example-form" [formGroup]="myform">
   <mat-form-field class="input-full-width" appearance="outline">
     <mat-label>姓名</mat-label>
-    <input matInput formControlName="name" >
+    <input matInput formControlName="name" maxlength="10">
     <mat-error *ngIf="name?.errors?.required" >請輸入姓名</mat-error>
   </mat-form-field>
   <mat-form-field class="input-full-width" appearance="outline">
@@ -9,7 +9,9 @@
     <span matPrefix>+886 &nbsp;</span>
     <input type="tel" matInput placeholder="977-555-333" minlength="9" maxlength="9" formControlName="phone">
     <mat-icon matSuffix>mode_edit</mat-icon>
-    <mat-error *ngIf="name?.errors?.required" >請輸入手機號碼</mat-error>
+
+    <mat-error *ngIf="phone?.errors?.required" >請輸入手機號碼</mat-error>
+    <mat-error *ngIf="phone?.errors?.minlength" >手機號碼格式錯誤</mat-error>
   </mat-form-field>
   <mat-form-field class="input-full-width" appearance="outline">
     <mat-label>選擇您的里</mat-label>
@@ -29,7 +31,7 @@
   <mat-form-field class="input-full-width" appearance="outline">
     <mat-label>確認密碼</mat-label>
     <input matInput type="password" autocomplete="off" formControlName="checkpwd">
-    <mat-error *ngIf="checkpwd?.errors?.required" >請確認密碼</mat-error>
+    <mat-error *ngIf="checkpwd?.errors?.required" equalsTo="password">請確認密碼</mat-error>
   </mat-form-field>
   <button mat-raised-button color="primary" class="input-full-width">註冊</button>
 </form>

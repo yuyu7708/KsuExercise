@@ -8,8 +8,13 @@ import { IndexComponent } from './index/index.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {MatModule} from './Modules/MatModule';
-import {ReactiveFormsModule} from "@angular/forms";
+import {NG_VALIDATORS, ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ForbiddenValidatorDirective } from './Directive/forbidden-name.directive';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { NewsComponent } from './index/news/news.component';
+import { RepairStatusComponent } from './index/repair-status/repair-status.component';
+import { MeetComponent } from './index/meet/meet.component';
 
 
 
@@ -20,6 +25,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LogInComponent,
     SignUpComponent,
     IndexComponent,
+    ForbiddenValidatorDirective,
+    SignInComponent,
+    NewsComponent,
+    RepairStatusComponent,
+    MeetComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -28,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,1 +1,12 @@
-<p>index works!</p>
+<div class="my-toolbar">
+  <mat-icon class="my-toolbar-icon-menu">menu</mat-icon>
+  <mat-icon class="my-toolbar-icon-phone">phone</mat-icon>
+  <div class="my-toolbar-content">
+    <p class="my-toolbar-title">歡迎回到XXX里</p>
+  </div>
+</div>
+<div class="my-contaire" style="background: #f2f1f0;  width: 100%; height: 100%; position: fixed;">
+  <app-news [NewsMessage]="NewsData.Message"></app-news>
+  <app-repair-status [RepairStatusData]="RepairStatus"></app-repair-status>
+  <app-meet [MeetData]="Meet" ></app-meet>
+</div>

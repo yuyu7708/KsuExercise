@@ -8,18 +8,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- Toolbar -->
-
-  <mat-card class="FormRow" >
-    <mat-card-content>
-      <nav mat-tab-nav-bar>
-        <a mat-tab-link
-           *ngFor="let link of navLinks"
-           [routerLink]="link.link"
-           routerLinkActive #rla="routerLinkActive"
-           [active]="rla.isActive">
-          {{link.label}}
-        </a>
-      </nav>
-      <router-outlet></router-outlet>
-    </mat-card-content>
-  </mat-card>
+<router-outlet></router-outlet>

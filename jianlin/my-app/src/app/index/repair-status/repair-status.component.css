@@ -1,0 +1,93 @@
+/*repair*/
+  .repair-row{
+    margin: 2vw auto;
+    position: relative;
+    max-width: 82%;
+  }
+  .repair-report{
+    text-decoration:none;
+    display: inline-block
+  }
+  .repair-status-row{
+    width: 15%;
+    position: relative;
+    padding:39px 0;
+    display: inline-block;
+  }
+  .repair-info-row{
+    max-width: 80%;
+    display: inline-block ;
+    margin-left: 2.2%;
+    padding: 1vw;
+  }
+  .repair-header{
+    position: relative;
+    margin: 0 auto;
+  }
+  .repair-actions{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .repair-status-Icon{
+    display: inline;
+    font-size: 5rem;
+    color: #ffa64d;
+  }
+  .repair-info-title{
+    display:inline-block;
+    margin: 0;
+    width: 70%;
+  }
+  .repair-title{
+    font-weight: bold;
+    text-align: left;
+  }
+/*card*/
+  .my-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .my-card-title{
+    font-weight: bold;
+    text-align: left;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .my-card-content{
+    padding: 0.5vw;
+  }
+  .my-card-sub{
+    color: #888;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  .my-chip{
+    border: 1px orangered solid;
+    padding:3px 8px;
+    background-color: #fff;
+    border-radius: 25px;
+    color: orangered;
+    margin: 1px 15px;
+  }
+  .status-Icon{
+    text-align: center;
+  }
+  .status-info{
+    background-color: #ffa64d;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius:0 0 4px 4px;
+    padding: 0.5vw 0;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+

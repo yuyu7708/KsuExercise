@@ -1,0 +1,37 @@
+
+<div class=" repair-row">
+  <h2 class="repair-title" >
+    修繕狀況
+  </h2>
+  <div class="repair-actions">
+    <a href="index" class="repair-report">
+      <span class="my-chip">立即回報</span>
+    </a>
+    <h2 class="my-card-sub" >更多</h2>
+  </div>
+  <div class="my-card repair-status-row">
+    <div class="status-Icon" style="padding-bottom: 15px ;">
+      <mat-icon class="repair-status-Icon">build_circle</mat-icon>
+    </div>
+    <div class="status-info">
+      {{ InputData.Status }}
+    </div>
+  </div>
+  <div class="my-card repair-info-row">
+    <div class="my-card-haeder">
+      <h2 class="my-card-title repair-info-title">
+        {{ InputData.RepairTitle }}
+      </h2>
+      <mat-icon style="display:inline-block; color: #888; text-align: right; margin: 0 10px;">chat</mat-icon>
+    </div>
+    <div class="my-card-content">
+      <div class="my-card-sub" style="width: 100%; margin: 5px;">
+        新增日期：{{ InputData.RepairTime }}
+      </div>
+      <div class="my-card-sub" style="width: 100%; margin: 5px;">
+        地點：{{ InputData.RepairAddr }}
+      </div>
+    </div>
+  </div>
+</div>
+

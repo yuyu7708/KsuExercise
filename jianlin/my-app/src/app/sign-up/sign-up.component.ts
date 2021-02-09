@@ -9,14 +9,15 @@ import validate = WebAssembly.validate;
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+
   myform=this.fb.group({
-    name:['',Validators.required],
-    phone:['',Validators.required],
+    name:['',Validators.required,Validators.maxLength(10)],
+    phone:['',Validators.required,Validators.minLength(9)],
     addr:['',Validators.required],
     password:['',[
       Validators.required,
       Validators.minLength(4),
-      Validators.maxLength(20)
+      Validators.maxLength(20),
     ]],
     checkpwd:['',Validators.required]
   })

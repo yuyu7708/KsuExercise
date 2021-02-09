@@ -1,0 +1,27 @@
+/*Toolbar*/
+  .my-toolbar{
+    width: 100%;
+    background-color: #f5c414;
+    padding: 0.8vw;
+  }
+  .my-toolbar-content{
+   text-align: center;
+  }
+  .my-toolbar-title{
+    font-size: large;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 2px;
+  }
+
+  /*Toolbar Icon*/
+  .my-toolbar-icon-phone{
+    color: white;
+    position: fixed;
+    right: 1vw;
+  }
+  .my-toolbar-icon-menu{
+    color: white;
+  }
+/*News*/
+

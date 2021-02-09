@@ -1,0 +1,58 @@
+.meet-row{
+  margin: 2vw auto;
+  position: relative;
+  max-width: 82%;
+}
+.meet-title{
+  font-weight: bold;
+  text-align: left;
+}
+.meet-actions{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.meet-sub{
+  color: #888888;
+  font-size: 18px;
+}
+.meet-lists{
+  width: 97%;
+  display: inline-block ;
+  padding: 1vw;
+}
+.meet-lists-title{
+  color: #ffa64d;
+  font-weight: bolder;
+}
+.meet-lists-actions{
+  position: absolute;
+  right: 1vw;
+}
+.meet-list-title{
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+}
+
+
+
+.my-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.my-card-title{
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+}
+.my-card-sub{
+  color: #888;
+  font-size: 1rem;
+  display: inline-block;
+}
+.my-card-content{
+  padding: 0.5vw;
+}
