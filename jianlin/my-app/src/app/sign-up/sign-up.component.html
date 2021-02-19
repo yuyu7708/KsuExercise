@@ -33,5 +33,5 @@
     <input matInput type="password" autocomplete="off" formControlName="checkpwd">
     <mat-error *ngIf="checkpwd?.errors?.required" equalsTo="password">請確認密碼</mat-error>
   </mat-form-field>
-  <button mat-raised-button color="primary" class="input-full-width">註冊</button>
+  <button mat-raised-button color="primary" class="input-full-width"  (click)="OnSubmit()" [disabled]="!myform.valid"  >註冊</button>
 </form>

@@ -9,7 +9,9 @@ import {FormControl, Validators} from "@angular/forms";
 export class SignInComponent implements OnInit {
 
   constructor() { }
-
+  myStorage = window.localStorage;
+  SignInErrorMessage=null;
+  SignInError=false;
   password = new FormControl('', [
     Validators.required,
     Validators.minLength(4),
@@ -33,6 +35,16 @@ export class SignInComponent implements OnInit {
       return '密碼不足4個字元';
     }
     return '無效密碼';
+  }
+  OnSubmit(){
+    const LocalUsers=JSON.parse(this.myStorage.getItem('localusers'));
+    if(LocalUsers.phone!=this.phone.value || LocalUsers.password!=this.password.value){
+      this.SignInErrorMessage='無此帳號/密碼錯誤，請重新嘗試或註冊新帳號';
+      this.SignInError=true;
+    }else{
+      location.assign('http://localhost:4200/index')
+    }
+    return false;
   }
 
 }
