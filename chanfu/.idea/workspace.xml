@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="routing erro&#10;check input erro" />
+    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/homework/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/homework/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/homework/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/homework/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/homework/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/e2e/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/homework/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/tslint.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +80,22 @@
       <workItem from="1612430654388" duration="638000" />
       <workItem from="1612434129808" duration="3407000" />
       <workItem from="1612490842864" duration="13670000" />
+      <workItem from="1612537343805" duration="2407000" />
+      <workItem from="1612543563451" duration="302000" />
+      <workItem from="1612544018004" duration="4489000" />
+      <workItem from="1612587256729" duration="9353000" />
+      <workItem from="1612633101665" duration="4445000" />
+      <workItem from="1612678332789" duration="1801000" />
+      <workItem from="1612680512651" duration="4865000" />
+      <workItem from="1612699768174" duration="972000" />
+      <workItem from="1612754709956" duration="11779000" />
+      <workItem from="1612848359823" duration="7817000" />
+      <workItem from="1612873425227" duration="3781000" />
+      <workItem from="1612932576541" duration="3642000" />
+      <workItem from="1613396488249" duration="589000" />
+      <workItem from="1613637733799" duration="4365000" />
+      <workItem from="1613644304625" duration="2895000" />
+      <workItem from="1613659014515" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="routing erro&#10;check input erro">
       <created>1612514886121</created>
@@ -63,7 +115,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="chanfu1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

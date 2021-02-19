@@ -1,32 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SinIndexComponent } from './sin-index/sin-index.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { HomeComponent } from './home/home.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import { HomeindexComponent } from './homeindex/homeindex.component';
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    SinIndexComponent,
+    HomeindexComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatCardModule,
     MatFormFieldModule,
+    MatSelectModule,
     MatInputModule,
-  ],
-  declarations: [
-    AppComponent,
-    HomeComponent,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

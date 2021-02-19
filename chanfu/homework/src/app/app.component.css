@@ -1,22 +1,6 @@
-#outbox{
-  margin: 0 auto;
-  width:500px;
-}
-#tabstyle{
-  max-width:100%;
-}
-.example-form {
-  min-width:150px;
+.outbox{
   max-width:500px;
-  width:100%;
-  margin-top:10px;
-}
-.inputstyle{
-  width:450px;
-  height:25px;
-  border-radius:10px;
-}
-.psize{
-  margin-top:5px;
-  font-size:20px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
