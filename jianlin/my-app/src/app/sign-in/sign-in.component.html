@@ -1,7 +1,12 @@
 <form class="example-form" >
+  <mat-card style="margin: 1vw;" *ngIf="SignInError" >
+    <mat-card-subtitle style="color: firebrick;">*{{SignInErrorMessage}}</mat-card-subtitle>
+  </mat-card>
   <mat-form-field class="input-full-width" appearance="outline">
     <mat-label>手機號碼</mat-label>
-    <input matInput [formControl]="phone" >
+    <span matPrefix>+886 &nbsp;</span>
+    <input type="tel" matInput [formControl]="phone" maxlength="9">
+
     <mat-error *ngIf="phone.invalid">{{PhoneErrorMessage()}}</mat-error>
   </mat-form-field>
 
@@ -15,5 +20,5 @@
     <mat-error *ngIf="password.invalid">{{PasswordErrorMessage()}}</mat-error>
   </mat-form-field>
   <mat-checkbox>記住帳號</mat-checkbox>
-  <button mat-raised-button color="primary" class="input-full-width">登入</button>
+  <button mat-raised-button color="primary" class="input-full-width" (click)="OnSubmit()">登入</button>
 </form>
