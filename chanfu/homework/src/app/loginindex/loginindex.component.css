@@ -1,0 +1,25 @@
+.groupstyle{
+  width:100%;
+}
+.tabstyle{
+  width:50%;
+}
+.buttonstyle{
+  width:400px;
+  margin-top:5px;
+  margin-left:50px;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pstyle{
+  font-size: 20px;
+  font-weight:bold;
+  margin-top: 10px;
+}
+.fieldstyle{
+  width:110%;
+  display: block;
+}

@@ -1,0 +1,93 @@
+#servicebox{
+  margin-left: 25px;
+  margin-top: -40px;
+  width: 450px;
+  height: 210px;
+}
+#servicetitlebox{
+  width: 95%;
+  height: 15%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#servicetitle{
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  width: 70%;
+  font-size: 25px;
+}
+#servicebutton{
+  border:1px solid #ffb900;
+  border-radius:20px;
+  height: 30px;
+  line-height: 30px;
+}
+#servicesrc{
+  margin-left: 10px;
+}
+#servicecontentbox{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 95%;
+  height: 150px;
+  overflow: hidden;
+}
+#serviceimg{
+  width:30%;
+  height: 90%;
+  margin-top: 1.5%;
+  margin-left: 5px;
+  border-radius:15px;
+  float: left;
+  background-color: white;
+}
+.iconstyle{
+  margin-left: 10%;
+  font-size: 100px;
+  color: #ffb900;
+}
+#servicestatus{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #ffb900;
+  border-radius: 0 0 15px 15px;
+}
+#servicecontent{
+  width: 280px;
+  height: 130px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 2%;
+  border-radius: 10px;
+  background-color: white;
+}
+.contenttitle{
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  width:80%;
+  display: inline-block;
+}
+.contenticon{
+  width: 20%;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  top: -6%;
+}
+.contentstyle{
+  font-size: 10px;
+  font-weight: bold;
+  color: gray;
+}
+.clearFloat{
+  clear:both;
+}
