@@ -10,11 +10,11 @@ import {AppRoutingModule} from './app-routing.module';
 import {MatModule} from './Modules/MatModule';
 import {NG_VALIDATORS, ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ForbiddenValidatorDirective } from './Directive/forbidden-name.directive';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { NewsComponent } from './index/news/news.component';
 import { RepairStatusComponent } from './index/repair-status/repair-status.component';
 import { MeetComponent } from './index/meet/meet.component';
+import { ConfirmPwdDirective } from './Directive/confirm-pwd.directive';
 
 
 
@@ -25,11 +25,11 @@ import { MeetComponent } from './index/meet/meet.component';
     LogInComponent,
     SignUpComponent,
     IndexComponent,
-    ForbiddenValidatorDirective,
     SignInComponent,
     NewsComponent,
     RepairStatusComponent,
-    MeetComponent
+    MeetComponent,
+    ConfirmPwdDirective
   ],
   imports: [
     ReactiveFormsModule,

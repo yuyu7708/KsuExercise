@@ -9,10 +9,12 @@ import {FormBuilder, FormControl, FormGroup, Validators,} from '@angular/forms';
 })
 export class LogInComponent implements OnInit {
   constructor() {}
-  navLinks = [
-    { link : 'SignIn', label :　'登入' },
-    { link : 'SignUp', label :　'註冊' }
-  ];
+  LinkActive=0;
   ngOnInit(): void {
+  }
+  getSignup(data: any){
+    if(data.signUp){
+      this.LinkActive=0;
+    }
   }
 }

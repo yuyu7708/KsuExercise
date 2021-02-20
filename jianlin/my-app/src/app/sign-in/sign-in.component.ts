@@ -8,7 +8,8 @@ import {FormControl, Validators} from "@angular/forms";
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
   myStorage = window.localStorage;
   SignInErrorMessage=null;
   SignInError=false;
@@ -17,9 +18,10 @@ export class SignInComponent implements OnInit {
     Validators.minLength(4),
     Validators.maxLength(20),
   ]);
-  phone = new FormControl('', [Validators.required]);
+  phone = new FormControl('', [Validators.required,Validators.minLength(9)]);
 
   ngOnInit(): void {
+
   }
   hide = true;
   PhoneErrorMessage(){
@@ -36,15 +38,31 @@ export class SignInComponent implements OnInit {
     }
     return '無效密碼';
   }
+  //登入
   OnSubmit(){
+    //取本地使用者
     const LocalUsers=JSON.parse(this.myStorage.getItem('localusers'));
+
     if(LocalUsers.phone!=this.phone.value || LocalUsers.password!=this.password.value){
+      //查無使用者
       this.SignInErrorMessage='無此帳號/密碼錯誤，請重新嘗試或註冊新帳號';
       this.SignInError=true;
     }else{
+      //查詢成功
       location.assign('http://localhost:4200/index')
     }
+
     return false;
+  }
+  //submit是否disabled
+  get verification(){
+
+    if(this.password.valid && this.phone.valid){
+      //phone & password格式正確
+      return true;
+    }else{
+      return false;
+    }
   }
 
 }

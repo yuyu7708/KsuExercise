@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import validate = WebAssembly.validate;
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+
+import { ConfirmPwdValidator} from "../Directive/confirm-pwd.directive";
 
 
 @Component({
@@ -8,8 +9,14 @@ import validate = WebAssembly.validate;
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
+
+
+
 export class SignUpComponent implements OnInit {
+  @Output() OnSignup: EventEmitter<any> = new EventEmitter();
+
   myStorage = window.localStorage;
+
   myform=this.fb.group({
     name:['',[
       Validators.required,Validators.maxLength(10)
@@ -23,12 +30,21 @@ export class SignUpComponent implements OnInit {
       Validators.minLength(4),
       Validators.maxLength(20),
     ]],
-    checkpwd:['',Validators.required]
+    checkpwd:['',
+     [ Validators.required,
+      Validators.minLength(4),
+      Validators.maxLength(20),
+       ConfirmPwdValidator
+     ]
+    ],
   })
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-    // this.myform.valueChanges.subscribe(console.log);
+    // this.myform.valueChanges.subscribe(()=>{
+    //   console.log(this.myform.get('checkpwd'));
+    // });
+
   }
   get name(){ return this.myform.get('name');}
   get phone(){ return this.myform.get('phone');}
@@ -37,13 +53,11 @@ export class SignUpComponent implements OnInit {
   get checkpwd(){ return this.myform.get('checkpwd');}
 
   OnSubmit(){
+    //取表單資料
     const userData=JSON.stringify(this.myform.value);
-    const Data=[];
-
-    if(this.myStorage.getItem('localusers')){
-      
-    }
-    alert('註冊成功!');
+    //存localStorage
     this.myStorage.setItem('localusers',userData);
+    alert('註冊成功!');
+    this.OnSignup.emit({signUp:true});
   }
 }

@@ -1,11 +1,11 @@
 <mat-card class="FormRow" >
   <mat-card-content>
-    <mat-tab-group>
-      <mat-tab  label="登入">
+    <mat-tab-group [(selectedIndex)]="LinkActive">
+      <mat-tab  label="登入" >
         <app-sign-in></app-sign-in>
       </mat-tab>
-      <mat-tab label="註冊">
-        <app-sign-up></app-sign-up>
+      <mat-tab label="註冊" >
+        <app-sign-up (OnSignup)="getSignup($event)"></app-sign-up>
       </mat-tab>
     </mat-tab-group>
   </mat-card-content>
