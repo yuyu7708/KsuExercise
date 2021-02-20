@@ -13,12 +13,23 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import { HomeindexComponent } from './homeindex/homeindex.component';
+import { NewsindexComponent } from './homeindex/newsindex/newsindex.component';
+import { ServiceIndexComponent } from './homeindex/service-index/service-index.component';
+import { MatIconModule } from '@angular/material/icon';
+import { OnlineMeetingComponent } from './homeindex/online-meeting/online-meeting.component';
+import { LoginindexComponent } from './loginindex/loginindex.component';
+import { SinupComponent } from './sinup/sinup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SinIndexComponent,
-    HomeindexComponent
+    HomeindexComponent,
+    NewsindexComponent,
+    ServiceIndexComponent,
+    OnlineMeetingComponent,
+    LoginindexComponent,
+    SinupComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +41,8 @@ import { HomeindexComponent } from './homeindex/homeindex.component';
     MatSelectModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,36 @@
+#newoutbox{
+  width: 450px;
+  height: 100px;
+  max-height: 100px;
+  position: relative;
+  bottom: 50px;
+  left: 25px;
+  background-color: white;
+  border-radius:10px;
+}
+#newtitlebox{
+  width: 95%;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+#newtitle{
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  width: 80%;
+  font-size: 25px;
+}
+#newtitlesrc{
+  margin-left: 10%;
+}
+#newcontentbox{
+  width: 95%;
+  height:40px;
+  margin: 15px auto 0;
+  overflow: hidden;
+}
+#newcontent{
+  font-size: 17px;
+  font-weight: bold;
+}

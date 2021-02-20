@@ -1,0 +1,52 @@
+#meetingbox{
+  margin-left: 25px;
+  margin-top: -10px;
+  width: 450px;
+  height: 250px;
+}
+#meetingtitlebox{
+  width: 95%;
+  height: 15%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#meetingtitle{
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  width: 90%;
+  font-size: 25px;
+}
+#meetingcontentbox{
+  margin:0 auto;
+  width: 95%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: auto;
+}
+#datestyle{
+  color: #ffb900;
+  font-weight: bold;
+  font-size: 20px;
+  width: 90%;
+  margin-top: 10px;
+  display: inline-block;
+}
+.meetingcontent{
+  margin:0 auto;
+  width: 95%;
+  height: 65px;
+  overflow: hidden;
+}
+.timestyle{
+  margin-top: 3px;
+  color: gray;
+  font-size: 10px;
+}
+.meetinginer{
+  font-size: 15px;
+  margin-top: -10px;
+  font-weight: bold;
+}
