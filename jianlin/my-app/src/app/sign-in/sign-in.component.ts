@@ -45,7 +45,7 @@ export class SignInComponent implements OnInit {
 
     if(LocalUsers.phone!=this.phone.value || LocalUsers.password!=this.password.value){
       //查無使用者
-      this.SignInErrorMessage='無此帳號/密碼錯誤，請重新嘗試或註冊新帳號';
+      this.SignInErrorMessage='帳號密碼錯誤，請重新輸入';
       this.SignInError=true;
     }else{
       //查詢成功
