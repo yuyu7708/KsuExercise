@@ -55,6 +55,7 @@ export class SignUpComponent implements OnInit {
   OnSubmit(){
     //取表單資料
     const userData=JSON.stringify(this.myform.value);
+    console.log(this.myform.value)
     //存localStorage
     this.myStorage.setItem('localusers',userData);
     alert('註冊成功!');
