@@ -1,0 +1,46 @@
+<!--  sinup  -->
+<form #sinupform="ngForm" appCheckpassword>
+  <!--  姓名  -->
+  <p class="pstyle">姓名:</p>
+  <mat-form-field class="fieldstyle" appearance="outline">
+    <mat-label>使用者姓名</mat-label>
+    <input matInput type="text" name="username" maxlength="10" required [(ngModel)]="username">
+    <mat-hint>已輸入字數{{username.length}}/10</mat-hint>
+    <mat-error>請輸入姓名</mat-error>
+  </mat-form-field>
+  <!-- 電話   -->
+  <p class="pstyle">電話:</p>
+  <mat-form-field class="fieldstyle" appearance="outline">
+    <mat-label>使用者電話</mat-label>
+    <span matPrefix>+886 &nbsp;</span>
+    <input type="tel" matInput placeholder="使用者電話" name="userphone" [(ngModel)]="userphone" minlength="10" maxlength="10" required>
+    <mat-hint>已輸入字數{{userphone.length}}/10</mat-hint>
+    <mat-error>請輸入電話號碼</mat-error>
+  </mat-form-field>
+  <!-- 地區   -->
+  <p class="pstyle">地區:</p>
+  <mat-form-field class="fieldstyle" appearance="outline">
+    <mat-label>地區</mat-label>
+    <mat-select required>
+      <mat-option value="one">台南</mat-option>
+      <mat-option value="two">高雄</mat-option>
+    </mat-select>
+    <mat-error>請選擇地區</mat-error>
+  </mat-form-field>
+  <!-- 密碼 -->
+  <p class="pstyle">密碼:</p>
+  <mat-form-field class="fieldstyle" appearance="outline">
+    <mat-label>請輸入密碼</mat-label>
+    <input matInput type="password" name="userpassword" [(ngModel)]="userpassword" required minlength="2" maxlength="20">
+    <mat-hint>已輸入字數{{userpassword.length}}/20</mat-hint>
+    <mat-error *ngIf="!FormControl.hasError('minLength')">密碼太短囉</mat-error>
+  </mat-form-field>
+  <!-- 確認密碼  -->
+  <p class="pstyle">確認密碼:</p>
+  <mat-form-field class="fieldstyle" appearance="outline">
+    <mat-label>請再輸入一次密碼</mat-label>
+    <input type="password" matInput required name="checkuserpassword" [(ngModel)]="checkuserpassword"  minlength="2" maxlength="20">
+    <mat-error>密碼不一樣</mat-error>
+  </mat-form-field>
+  <button class="buttonstyle" [disabled]="!sinupform.form.valid" mat-raised-button color="primary" (click)="Onsubmit()">註冊</button>
+</form>
