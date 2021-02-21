@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { OnlineMeetingComponent } from './homeindex/online-meeting/online-meeting.component';
 import { LoginindexComponent } from './loginindex/loginindex.component';
 import { SinupComponent } from './sinup/sinup.component';
+import { CheckpasswordDirective } from './checkpassword.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SinupComponent } from './sinup/sinup.component';
     ServiceIndexComponent,
     OnlineMeetingComponent,
     LoginindexComponent,
-    SinupComponent
+    SinupComponent,
+    CheckpasswordDirective
   ],
   imports: [
     BrowserModule,

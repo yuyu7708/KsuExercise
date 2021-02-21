@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="feat:新增sin-index(註冊/登入)/homeindex(首頁)。&#10;docs:新增sin-index/homeindex,移除home(原首頁)。&#10;refactor:重構驗證表單方式。">
-      <change afterPath="$PROJECT_DIR$/homework/src/app/homeindex/homeindex.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/homeindex/homeindex.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/homeindex/homeindex.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/homeindex/homeindex.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/sin-index/sin-index.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/sin-index/sin-index.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/sin-index/sin-index.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/app/sin-index/sin-index.component.ts" afterDir="false" />
+    <list default="true" id="5db076bb-8673-4684-a17a-d01b351d1a5f" name="Default Changelist" comment="featrue:註冊/登入/首頁內容。&#10;docs:將原註冊/登入拆成sinup/loginindex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/app/sinup/sinup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/app/sinup/sinup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/homework/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,8 @@
       <workItem from="1613659014515" duration="4687000" />
       <workItem from="1613781301825" duration="20730000" />
       <workItem from="1613806647803" duration="116000" />
-      <workItem from="1613806774331" duration="4634000" />
+      <workItem from="1613806774331" duration="6153000" />
+      <workItem from="1613872173515" duration="5273000" />
     </task>
     <task id="LOCAL-00001" summary="routing erro&#10;check input erro">
       <created>1612514886121</created>
@@ -112,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613728250788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="featrue:註冊/登入/首頁內容。&#10;docs:將原註冊/登入拆成sinup/loginindex">
+      <created>1613811734406</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613811734406</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="routing erro&#10;check input erro" />
     <MESSAGE value="feat:新增sin-index(註冊/登入)/homeindex(首頁)。&#10;docs:新增sin-index/homeindex,移除home(原首頁)。&#10;refactor:重構驗證表單方式。" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:新增sin-index(註冊/登入)/homeindex(首頁)。&#10;docs:新增sin-index/homeindex,移除home(原首頁)。&#10;refactor:重構驗證表單方式。" />
+    <MESSAGE value="featrue:註冊/登入/首頁內容。&#10;docs:將原註冊/登入拆成sinup/loginindex" />
+    <option name="LAST_COMMIT_MESSAGE" value="featrue:註冊/登入/首頁內容。&#10;docs:將原註冊/登入拆成sinup/loginindex" />
   </component>
 </project>
