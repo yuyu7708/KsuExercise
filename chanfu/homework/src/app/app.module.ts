@@ -31,7 +31,7 @@ import { CheckpasswordDirective } from './checkpassword.directive';
     OnlineMeetingComponent,
     LoginindexComponent,
     SinupComponent,
-    CheckpasswordDirective
+    CheckpasswordDirective,
   ],
   imports: [
     BrowserModule,

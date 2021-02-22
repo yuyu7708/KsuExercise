@@ -11,20 +11,15 @@ export class CheckpasswordDirective {
   validate(control: AbstractControl): ValidationErrors{
     return  chekpwd(control);
   }
-
 }
 export const chekpwd:ValidatorFn=(control:AbstractControl) :ValidationErrors | null =>{
-
   const upwd = control.get('userpassword');
   const ckupwd = control.get('checkuserpassword');
-  // console.log(control.get('checkuserpassword')?.value);
-  if ( upwd && upwd.dirty && ckupwd.dirty && ckupwd?.value != upwd?.value){
-    ckupwd?.setErrors({ haveerro : true });
-    return { haveerro : true };
-  }
-  else if(upwd && upwd.dirty && ckupwd.dirty && ckupwd?.value == upwd?.value){
-    delete ckupwd?.errors.haveerro;
+  if(upwd?.value == ckupwd?.value){
     ckupwd?.setErrors(null);
+  }
+  else{
+    ckupwd?.setErrors({ haveerro : true });
   }
   return null;
 

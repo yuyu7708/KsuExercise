@@ -39,7 +39,7 @@
   <p class="pstyle">確認密碼:</p>
   <mat-form-field class="fieldstyle" appearance="outline">
     <mat-label>請再輸入一次密碼</mat-label>
-    <input type="password" matInput required name="checkuserpassword" [(ngModel)]="checkuserpassword"  minlength="2" maxlength="20">
+    <input type="password" matInput name="checkuserpassword" [(ngModel)]="checkuserpassword" minlength="2" maxlength="20" >
     <mat-error>密碼不一樣</mat-error>
   </mat-form-field>
   <button class="buttonstyle" [disabled]="!sinupform.form.valid" mat-raised-button color="primary" (click)="Onsubmit()">註冊</button>
