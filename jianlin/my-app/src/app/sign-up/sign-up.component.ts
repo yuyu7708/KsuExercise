@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-
-import { ConfirmPwdValidator} from "../Directive/confirm-pwd.directive";
+import {apiService} from "../../service/api.service";
+import {HttpClient} from "@angular/common/http";
 
 
 @Component({
@@ -14,9 +14,7 @@ import { ConfirmPwdValidator} from "../Directive/confirm-pwd.directive";
 
 export class SignUpComponent implements OnInit {
   @Output() OnSignup: EventEmitter<any> = new EventEmitter();
-
-  myStorage = window.localStorage;
-
+  ValidationErrorMessage=null;
   myform=this.fb.group({
     name:['',[
       Validators.required,Validators.maxLength(10)
@@ -37,12 +35,10 @@ export class SignUpComponent implements OnInit {
      ]
     ],
   })
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder ,private http:HttpClient,private  formBuilder:FormBuilder,private Api:apiService) {
+  }
 
   ngOnInit() {
-    // this.myform.valueChanges.subscribe(()=>{
-    //   console.log(this.myform.get('checkpwd'));
-    // });
 
   }
   get name(){ return this.myform.get('name');}
@@ -52,12 +48,30 @@ export class SignUpComponent implements OnInit {
   get checkpwd(){ return this.myform.get('checkpwd');}
 
   OnSubmit(){
-    //取表單資料
-    const userData=JSON.stringify(this.myform.value);
-    console.log(this.myform.value)
-    //存localStorage
-    this.myStorage.setItem('localusers',userData);
-    alert('註冊成功!');
-    this.OnSignup.emit({signUp:true});
+    //取表單資料並建立formdata
+    const formdata=new FormData();
+    const formkeys=Object.keys(this.myform.value);
+    formkeys.forEach(keys=>{
+      const formvalue=this.myform.get(keys).value;
+      formdata.append(keys,formvalue)
+    });
+    //api
+    this.Api.signup_post(formdata).subscribe(rep=>{
+      if(rep!=true){
+        Object.keys(rep).forEach(keys=>{
+          rep[keys].forEach(index=>{
+            if(index=='unique' && keys=='phone'){
+              this.ValidationErrorMessage='門號已被註冊'
+            }else if(index=='unique' && keys=='name'){
+              this.ValidationErrorMessage='名稱已被使用'
+            }
+            alert(this.ValidationErrorMessage);
+          })
+        })
+      }else{
+        alert('註冊成功!');
+        this.OnSignup.emit({signUp:true});
+      }
+    })
   }
 }

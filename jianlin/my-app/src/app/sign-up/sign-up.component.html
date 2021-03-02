@@ -16,9 +16,9 @@
   <mat-form-field class="input-full-width" appearance="outline">
     <mat-label>選擇您的里</mat-label>
     <mat-select formControlName="addr">
-      <mat-option value="primary">Primary</mat-option>
-      <mat-option value="accent">Accent</mat-option>
-      <mat-option value="warn">Warn</mat-option>
+      <mat-option value="0">Primary</mat-option>
+      <mat-option value="1">Accent</mat-option>
+      <mat-option value="2">Warn</mat-option>
     </mat-select>
     <mat-error *ngIf="addr?.errors?.required">請選擇地址</mat-error>
   </mat-form-field>

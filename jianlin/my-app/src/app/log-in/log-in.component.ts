@@ -11,6 +11,7 @@ export class LogInComponent implements OnInit {
   constructor() {}
   LinkActive=0;
   ngOnInit(): void {
+
   }
   getSignup(data: any){
     if(data.signUp){

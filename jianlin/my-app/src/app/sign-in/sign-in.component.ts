@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
+import {apiService} from "../../service/api.service";
 
 @Component({
   selector: 'app-sign-in',
@@ -8,7 +9,7 @@ import {FormControl, Validators} from "@angular/forms";
 })
 export class SignInComponent implements OnInit {
 
-  constructor() {
+  constructor(private api:apiService) {
   }
   myStorage = window.localStorage;
   SignInErrorMessage=null;
@@ -40,23 +41,15 @@ export class SignInComponent implements OnInit {
   }
   //登入
   OnSubmit(){
-    //取本地使用者
-    const LocalUsers=JSON.parse(this.myStorage.getItem('localusers'));
 
-    if(LocalUsers.phone!=this.phone.value || LocalUsers.password!=this.password.value){
-      //查無使用者
-      this.SignInErrorMessage='帳號密碼錯誤，請重新輸入';
-      this.SignInError=true;
-    }else{
-      //查詢成功
-      location.assign('http://localhost:4200/index')
-    }
+    this.api.signin_post({phone:''}).subscribe(rep=>{
+      console.log(rep)
+    })
 
     return false;
   }
   //submit是否disabled
   get verification(){
-
     if(this.password.valid && this.phone.valid){
       //phone & password格式正確
       return true;

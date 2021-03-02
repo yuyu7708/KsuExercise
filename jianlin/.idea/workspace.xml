@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f077ca-8c97-423f-9bc0-af5696678c9e" name="Default Changelist" comment="" />
+    <list default="true" id="43f077ca-8c97-423f-9bc0-af5696678c9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/log-in/log-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/log-in/log-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/sign-in/sign-in.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,8 +53,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chanfu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../xampp/htdocs/MyApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,11 +64,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="ts.external.directory.path" value="C:\KsuExercise\jianlin\my-app\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\PhpStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KsuExercise\jianlin\my-app\src\app" />
       <recent name="C:\KsuExercise\jianlin\my-app\src\app\Modules" />
     </key>
   </component>
@@ -88,6 +96,10 @@
       <workItem from="1613701982706" duration="7361000" />
       <workItem from="1613783409198" duration="24275000" />
       <workItem from="1613873614946" duration="4841000" />
+      <workItem from="1613960968790" duration="5307000" />
+      <workItem from="1613972012366" duration="2279000" />
+      <workItem from="1613979226022" duration="48000" />
+      <workItem from="1613979736983" duration="19000" />
     </task>
     <servers />
   </component>
@@ -105,47 +117,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1612623955892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612623955892" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1612433106564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612433106564" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1612433106564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612433106564" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1612433106564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612433106564" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1612433106564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612433106564" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1612599240337">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612599240337" />
-    <state x="4" y="229" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1612618827523">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="4" y="229" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612618827523" />
-    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612614659044">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="561" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612614659044" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1612849857312">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612849857312" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613798384923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613798384923" />
   </component>
 </project>

@@ -15,6 +15,8 @@ import { NewsComponent } from './index/news/news.component';
 import { RepairStatusComponent } from './index/repair-status/repair-status.component';
 import { MeetComponent } from './index/meet/meet.component';
 import { ConfirmPwdDirective } from './Directive/confirm-pwd.directive';
+import {HttpClientModule} from "@angular/common/http";
+import {apiService} from "../service/api.service";
 
 
 
@@ -37,8 +39,10 @@ import { ConfirmPwdDirective } from './Directive/confirm-pwd.directive';
     AppRoutingModule,
     MatModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [
+    apiService
   ],
   bootstrap: [AppComponent]
 })
