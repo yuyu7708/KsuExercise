@@ -17,6 +17,8 @@ import { MeetComponent } from './index/meet/meet.component';
 import { ConfirmPwdDirective } from './Directive/confirm-pwd.directive';
 import {HttpClientModule} from "@angular/common/http";
 import {apiService} from "../service/api.service";
+import { ResourceApiComponent } from './Github/resource-api/resource-api.component';
+import {githubapiService} from "../service/githubapi.service";
 
 
 
@@ -31,7 +33,8 @@ import {apiService} from "../service/api.service";
     NewsComponent,
     RepairStatusComponent,
     MeetComponent,
-    ConfirmPwdDirective
+    ConfirmPwdDirective,
+    ResourceApiComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -42,7 +45,8 @@ import {apiService} from "../service/api.service";
     HttpClientModule
   ],
   providers: [
-    apiService
+    apiService,
+    githubapiService
   ],
   bootstrap: [AppComponent]
 })

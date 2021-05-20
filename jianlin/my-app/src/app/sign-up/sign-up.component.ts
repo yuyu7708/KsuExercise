@@ -35,8 +35,7 @@ export class SignUpComponent implements OnInit {
      ]
     ],
   })
-  constructor(private fb: FormBuilder ,private http:HttpClient,private  formBuilder:FormBuilder,private Api:apiService) {
-  }
+  constructor(private fb: FormBuilder ,private http:HttpClient,private  formBuilder:FormBuilder,private Api:apiService) {}
 
   ngOnInit() {
 
